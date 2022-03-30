@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Head from 'next/head';
 
 export default function Home() {
 	// console.log(process.env.NEXT_PUBLIC_API_URL);
@@ -21,6 +22,9 @@ export default function Home() {
 
 	return (
 		<div className='flex items-center justify-center w-screen h-screen min-h-[500px] px-1 galaxyFold:px-5 overflow-x-hidden font-extrabold text-center bg-darkBlue text-lightCyan font-manrope'>
+			<Head>
+				<title>NextJs/TailwindCSS | Advice Generator App</title>
+			</Head>
 			<main className='relative space-y-5 md:space-y-10 p-10 flex-col mx-5 my-20 w-[343px] md:w-[540px] h-[315px] md:h-[332px] bg-darkGrayishBlue rounded-[10px] flex items-center justify-center'>
 				<h2 className='text-neonGreen text-headingS md:text-heading'>
 					ADVICE #{quote.id}
